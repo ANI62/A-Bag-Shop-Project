@@ -1,0 +1,20 @@
+USERMODEL
+full name-string
+Email-string
+password-string
+cart-array
+isadmin-boolean
+order-array
+contact no-Number
+DOB-Number
+picture-db
+
+PRODUCT
+img
+name 
+price 
+discount
+bgcolor
+panelcolor
+textcolor
+
