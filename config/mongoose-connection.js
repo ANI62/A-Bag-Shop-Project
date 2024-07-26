@@ -1,7 +1,10 @@
 const mongoose=require('mongoose');
-mongoose.connect("mongodb://127.0.0.1:27017/scatch").
+const degr=require('debug')('development:mongoose');
+const config=require('config');
+
+mongoose.connect(`${config.get("MONGODB_URI")}/scatch`).
 then(function(){
-  console.log("We are connected now");
+  degr("We are connected now");
 }).
 catch(function(err){
   console.log("We are not connected now",err);
