@@ -4,7 +4,7 @@ const config=require('config');
 
 mongoose.connect(`${config.get("MONGODB_URI")}/scatch`).
 then(function(){
-  degr("We are connected now");
+  degr("We are connected now"); 
 }).
 catch(function(err){
   console.log("We are not connected now",err);
